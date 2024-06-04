@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#3F51B5"
+    android:orientation="vertical"
+
+    android:textAlignment="center"
+    tools:context=".DangKy">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="ĐĂNG KÝ"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#EAE2E2"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Tên đăng ký"
+        android:inputType="text"
+
+        android:paddingLeft="20dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#EAE2E2"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rdoGT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdoNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/design_default_color_surface"
+            android:text="Nam"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdoNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Nữ"
+
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#EAE2E2"
+        android:drawableLeft="@drawable/calendar"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Ngày sinh"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60px"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:text="Đăng Nhập"
+
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnDangky1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60px"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:text="Đăng Ký"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Thoát" />
+
+</LinearLayout>

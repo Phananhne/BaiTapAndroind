@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:text="Tri thức - Đạo đức - Sáng tạo"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:text="Hutech trao bổ nhiệm tân phó giáo sư Trần Quốc Thao, Phó giáo sư Trần Minh Trí và 02 tân phó trưởng"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:src="@drawable/hinhanh"
+        app:srcCompat="@drawable/hinhanh" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:text="Tin HUTECH"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hinhanh"
+            app:srcCompat="@drawable/hinhanh" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giảng viên, sinh viên Hutech thêm cơ hội trao dồi chuyên môn trong lĩnh vực vào ngày 07/12 sắp tới"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

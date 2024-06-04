@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtdocthan"
+            android:layout_width="250dp"
+            android:layout_height="67dp"
+            android:text="Độc thân: 0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtdcc"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="Đã có chủ: 0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtLGBT"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="LGBT: 0"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/images" />
+
+    <Button
+        android:id="@+id/btndt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/imageButton"
+        android:backgroundTint="#4CAF50"
+        android:text="Độc thân" />
+
+    <Button
+        android:id="@+id/btndcc"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/btndt"
+        android:backgroundTint="#E91E63"
+        android:text="Đã có chủ" />
+
+    <Button
+        android:id="@+id/btnlgbt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/btndcc"
+        android:text="LGBT" />
+
+</RelativeLayout>
